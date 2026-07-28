@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root { --primary: #134D0A; --accent: #7FAF7A; --bg: #FFFFFF; }
+html { scroll-behavior: smooth; }
+body { font-family: var(--font-body), -apple-system, BlinkMacSystemFont, system-ui, sans-serif; background: var(--bg); -webkit-font-smoothing: antialiased; }
+h1, h2, h3 { font-family: var(--font-display), Georgia, serif; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; } }
+@media (max-width: 767px) { body { padding-bottom: 5.5rem; } }
+@keyframes fade-in-up { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+.animate-fade-in-up { animation: fade-in-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) both; }
+iframe { display: block; }
